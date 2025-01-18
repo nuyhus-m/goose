@@ -10,6 +10,6 @@ public class ApiTestController {
 
     @GetMapping("/hello") // GET 요청 처리
     public String hello() {
-        return "Hello, D208 Spring Boot!";
+        return "Hello, D208 Spring Boot Test!";
     }
 }
