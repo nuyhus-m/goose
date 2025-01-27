@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dest_home">
+
+    <fragment
+        android:id="@+id/dest_home"
+        android:name="com.ssafy.firstproject.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/dest_game_start"
+        android:name="com.ssafy.firstproject.ui.game.GameStartFragment"
+        android:label="fragment_game_start"
+        tools:layout="@layout/fragment_game_start" />
+
+    <fragment
+        android:id="@+id/dest_check"
+        android:name="com.ssafy.firstproject.ui.check.CheckFragment"
+        android:label="fragment_check"
+        tools:layout="@layout/fragment_check" />
+
+    <fragment
+        android:id="@+id/dest_image"
+        android:name="com.ssafy.firstproject.ui.image.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_check" />
+
+    <fragment
+        android:id="@+id/dest_my_page"
+        android:name="com.ssafy.firstproject.ui.mypage.MyPageFragment"
+        android:label="fragment_my_page"
+        tools:layout="@layout/fragment_my_page" />
 
 </navigation>
