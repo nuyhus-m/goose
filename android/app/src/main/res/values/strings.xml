@@ -10,4 +10,6 @@
     <string name="game_start">게임하기</string>
     <string name="game_start_caption">당신은 얼마나 판별력이 있으신가요?\n확인하러 가볼까요?</string>
     <string name="play">play</string>
+    <string name="answer_selection_button">정답 선택 버튼</string>
+    <string name="news_img">뉴스 이미지</string>
 </resources>
