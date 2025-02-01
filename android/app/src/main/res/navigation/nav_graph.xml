@@ -8,31 +8,31 @@
     <fragment
         android:id="@+id/dest_home"
         android:name="com.ssafy.firstproject.ui.home.HomeFragment"
-        android:label="fragment_home"
+        android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/dest_game_start"
         android:name="com.ssafy.firstproject.ui.game.GameStartFragment"
-        android:label="fragment_game_start"
+        android:label="GameStartFragment"
         tools:layout="@layout/fragment_game_start" />
 
     <fragment
         android:id="@+id/dest_check"
         android:name="com.ssafy.firstproject.ui.check.CheckFragment"
-        android:label="fragment_check"
+        android:label="CheckFragment"
         tools:layout="@layout/fragment_check" />
 
     <fragment
         android:id="@+id/dest_image"
         android:name="com.ssafy.firstproject.ui.image.ImageFragment"
-        android:label="fragment_image"
+        android:label="ImageFragment"
         tools:layout="@layout/fragment_check" />
 
     <fragment
         android:id="@+id/dest_my_page"
         android:name="com.ssafy.firstproject.ui.mypage.MyPageFragment"
-        android:label="fragment_my_page"
+        android:label="MyPageFragment"
         tools:layout="@layout/fragment_my_page" />
 
 </navigation>
