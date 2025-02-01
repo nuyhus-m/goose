@@ -7,4 +7,7 @@
     <string name="image">이미지</string>
     <string name="my">마이</string>
 
+    <string name="game_start">게임하기</string>
+    <string name="game_start_caption">당신은 얼마나 판별력이 있으신가요?\n확인하러 가볼까요?</string>
+    <string name="play">play</string>
 </resources>
