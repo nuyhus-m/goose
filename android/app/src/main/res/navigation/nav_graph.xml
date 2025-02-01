@@ -35,4 +35,10 @@
         android:label="MyPageFragment"
         tools:layout="@layout/fragment_my_page" />
 
+    <fragment
+        android:id="@+id/dest_game"
+        android:name="com.ssafy.firstproject.ui.game.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game" />
+
 </navigation>
