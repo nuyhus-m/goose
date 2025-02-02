@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/dest_game_start"
-        android:name="com.ssafy.firstproject.ui.game.GameStartFragment"
+        android:name="com.ssafy.firstproject.ui.gamestart.GameStartFragment"
         android:label="GameStartFragment"
         tools:layout="@layout/fragment_game_start" />
 
@@ -40,5 +40,11 @@
         android:name="com.ssafy.firstproject.ui.game.GameFragment"
         android:label="GameFragment"
         tools:layout="@layout/fragment_game" />
+
+    <dialog
+        android:id="@+id/dest_choice_dialog"
+        android:name="com.ssafy.firstproject.ui.game.ChoiceDialogFragment"
+        android:label="ChoiceDialogFragment"
+        tools:layout="@layout/dialog_choice" />
 
 </navigation>
