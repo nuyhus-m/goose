@@ -20,5 +20,9 @@ class GameFragment : BaseFragment<FragmentGameBinding>(
         binding.toolbar.setNavigationOnClickListener {
             findNavController().popBackStack()
         }
+
+        binding.fab.setOnClickListener {
+            findNavController().navigate(R.id.dest_choice_dialog)
+        }
     }
 }
