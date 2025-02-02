@@ -17,4 +17,9 @@
     <string name="choice_fake_news">허위 정보여서 가짜</string>
     <string name="choice_exaggerated_news">과장 보도여서 가짜</string>
     <string name="choice_clickbait">클릭베이트여서 가짜</string>
+    <string name="result_img">결과 이미지</string>
+    <string name="answer">정답</string>
+    <string name="answer_chart">답안분포</string>
+    <string name="answer_reason">정답이유</string>
+    <string name="answer_time">체류시간</string>
 </resources>
