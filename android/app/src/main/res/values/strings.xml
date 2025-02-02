@@ -7,4 +7,14 @@
     <string name="image">이미지</string>
     <string name="my">마이</string>
 
+    <string name="type_img">이미지</string>
+    <string name="type_url">URL</string>
+    <string name="type_content">내용</string>
+
+    <string-array name="check_types">
+        <item>@string/type_img</item>
+        <item>@string/type_url</item>
+        <item>@string/type_content</item>
+    </string-array>
+
 </resources>
