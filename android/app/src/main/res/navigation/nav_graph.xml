@@ -41,6 +41,12 @@
         android:label="GameFragment"
         tools:layout="@layout/fragment_game" />
 
+    <fragment
+        android:id="@+id/dest_game_result"
+        android:name="com.ssafy.firstproject.ui.gameresult.GameResultFragment"
+        android:label="GameResultFragment"
+        tools:layout="@layout/fragment_game_result" />
+
     <dialog
         android:id="@+id/dest_choice_dialog"
         android:name="com.ssafy.firstproject.ui.game.ChoiceDialogFragment"
