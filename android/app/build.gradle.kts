@@ -71,4 +71,7 @@ dependencies {
 
     //framework ktx dependency 추가
     implementation (libs.androidx.fragment.ktx)
+
+    // MPAndroidChart
+    implementation (libs.mpandroidchart)
 }
