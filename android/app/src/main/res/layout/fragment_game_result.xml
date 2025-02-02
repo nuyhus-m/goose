@@ -28,7 +28,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/spacing_24dp">
 
             <ImageView
                 android:id="@+id/iv_result"
@@ -73,6 +74,7 @@
                 android:layout_marginTop="@dimen/spacing_12dp"
                 android:background="@drawable/bg_game_text"
                 android:gravity="center"
+                android:padding="@dimen/spacing_12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_answer_tag"
@@ -98,6 +100,7 @@
                 android:layout_marginTop="@dimen/spacing_12dp"
                 android:background="@drawable/bg_game_text"
                 android:gravity="center"
+                android:padding="@dimen/spacing_12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_time_tag"
@@ -125,6 +128,7 @@
                 android:gravity="center"
                 android:padding="@dimen/spacing_16dp"
                 android:textColor="@color/black"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_reason_tag"
@@ -140,6 +144,28 @@
                 android:text="@string/answer_chart"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_reason" />
+
+            <View
+                android:id="@+id/view_chart"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="@dimen/spacing_16dp"
+                android:layout_marginTop="@dimen/spacing_12dp"
+                android:background="@drawable/bg_game_text"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_chart_tag" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/spacing_12dp"
+                app:layout_constraintBottom_toBottomOf="@id/view_chart"
+                app:layout_constraintEnd_toEndOf="@id/view_chart"
+                app:layout_constraintStart_toStartOf="@id/view_chart"
+                app:layout_constraintTop_toTopOf="@id/view_chart" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
