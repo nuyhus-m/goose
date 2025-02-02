@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.ssafy.firstproject.R
 import com.ssafy.firstproject.databinding.DialogChoiceBinding
 
 class ChoiceDialogFragment : BottomSheetDialogFragment() {
@@ -16,9 +18,17 @@ class ChoiceDialogFragment : BottomSheetDialogFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = DialogChoiceBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnReal.setOnClickListener {
+            findNavController().navigate(R.id.dest_game_result)
+        }
     }
 
     override fun onDestroyView() {
