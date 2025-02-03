@@ -3,7 +3,6 @@ package com.ssafy.firstproject.ui.check
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import com.ssafy.firstproject.R
 import com.ssafy.firstproject.base.BaseFragment
 import com.ssafy.firstproject.databinding.FragmentCheckBinding
@@ -20,30 +19,14 @@ class CheckFragment : BaseFragment<FragmentCheckBinding>(
         binding.autoCompleteTextView.setOnItemClickListener { parent, _, position, _ ->
             val selectedItem = parent.getItemAtPosition(position) as String
 
-            when (selectedItem) {
-                getString(R.string.type_img) -> {
-                    binding.mcvImg.visibility = View.VISIBLE
-                    binding.tilUrl.visibility = View.GONE
-                    binding.tilContent.visibility = View.GONE
-                }
-                getString(R.string.type_url) -> {
-                    binding.mcvImg.visibility = View.GONE
-                    binding.tilUrl.visibility = View.VISIBLE
-                    binding.tilContent.visibility = View.GONE
-                }
-                getString(R.string.type_content) -> {
-                    binding.mcvImg.visibility = View.GONE
-                    binding.tilUrl.visibility = View.GONE
-                    binding.tilContent.visibility = View.VISIBLE
-                }
-            }
-            // 선택된 항목을 처리하는 코드
-            Toast.makeText(requireContext(), "선택된 항목: $selectedItem", Toast.LENGTH_SHORT).show()
+            showBySelectedItem(selectedItem)
         }
     }
 
     override fun onResume() {
         super.onResume()
+
+        showBySelectedItem(binding.autoCompleteTextView.text.toString())
 
         val typeList = resources.getStringArray(R.array.check_types)
 
@@ -54,5 +37,25 @@ class CheckFragment : BaseFragment<FragmentCheckBinding>(
         )
 
         binding.autoCompleteTextView.setAdapter(adapter)
+    }
+
+    private fun showBySelectedItem(selectedItem: String) {
+        when (selectedItem) {
+            getString(R.string.type_img) -> {
+                binding.clImg.visibility = View.VISIBLE
+                binding.tilUrl.visibility = View.GONE
+                binding.tilContent.visibility = View.GONE
+            }
+            getString(R.string.type_url) -> {
+                binding.clImg.visibility = View.GONE
+                binding.tilUrl.visibility = View.VISIBLE
+                binding.tilContent.visibility = View.GONE
+            }
+            getString(R.string.type_content) -> {
+                binding.clImg.visibility = View.GONE
+                binding.tilUrl.visibility = View.GONE
+                binding.tilContent.visibility = View.VISIBLE
+            }
+        }
     }
 }
