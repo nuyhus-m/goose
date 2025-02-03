@@ -169,7 +169,6 @@
             android:visibility="gone"
             android:hint="URL 입력"
             app:endIconMode="custom"
-            app:endIconDrawable="@drawable/bg_url_end_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.09"
             app:layout_constraintStart_toStartOf="parent"
@@ -198,3 +197,4 @@
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
