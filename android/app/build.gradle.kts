@@ -74,4 +74,7 @@ dependencies {
 
     // MPAndroidChart
     implementation (libs.mpandroidchart)
+
+    // BlurView
+    implementation (libs.blurview)
 }
