@@ -31,8 +31,8 @@
         <item name="android:fontFamily">@font/spoqahansansneo_bold</item>
     </style>
 
-    <style name="Widget.TextView.Header.Medium">
-        <item name="android:fontFamily">@font/spoqahansansneo_medium</item>
+    <style name="Widget.TextView.Header.Small">
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="Widget.TextView.Title">
@@ -42,7 +42,6 @@
 
     <style name="Widget.TextView.Caption">
         <item name="android:textSize">14sp</item>
-        <item name="android:letterSpacing">-0.05</item>
         <item name="android:textColor">@color/sonicSilver</item>
     </style>
 
@@ -53,8 +52,13 @@
 
     <style name="Widget.TextView.Body">
         <item name="android:textSize">16sp</item>
-        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:letterSpacing">-0.06</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
         <item name="android:fontFamily">@font/spoqahansansneo_light</item>
+    </style>
+
+    <style name="Widget.TextView.Body.Medium">
+        <item name="android:fontFamily">@font/spoqahansansneo_medium</item>
     </style>
 
     <!-- Button Style -->
