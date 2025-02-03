@@ -12,7 +12,7 @@
         android:layout_margin="@dimen/spacing_16dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/iv_back"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/btn_left_arrow"
@@ -22,7 +22,7 @@
             app:layout_constraintWidth_percent="0.08" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_fragment_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="뉴스 판별하기"
@@ -32,10 +32,10 @@
             android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_back" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tv_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -43,10 +43,10 @@
             android:text="내가 본 기사는 어느정도 사실일까?\n뉴스를 판별해보세요"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_fragment_title" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tv_check_type_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
@@ -55,30 +55,30 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tv_check_type_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="어떤 타입을 판별할까요?"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_check_type_title" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+            android:id="@+id/til_check_type"
             style="?attr/textInputOutlinedExposedDropdownMenuStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             app:hintEnabled="false"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_check_type_subtitle"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidth="2dp">
 
             <AutoCompleteTextView
-                android:id="@+id/autoCompleteTextView"
+                android:id="@+id/act_check_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:dropDownHeight="150dp"
@@ -87,7 +87,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tv_content_input_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -96,19 +96,19 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/til_check_type" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tv_content_input_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="컨텐츠를 선택해주세요."
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_content_input_title" />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_img"
+            android:id="@+id/cl_img_input"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
@@ -116,7 +116,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6">
+            app:layout_constraintTop_toBottomOf="@+id/tv_content_input_subtitle">
 
             <ImageView
                 android:layout_width="0dp"
@@ -132,7 +132,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_content"
+            android:id="@+id/til_content_input"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -142,10 +142,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6">
+            app:layout_constraintTop_toBottomOf="@+id/tv_content_input_subtitle">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edit_id"
+                android:id="@+id/tie_content_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textMultiLine"
@@ -154,7 +154,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_url"
+            android:id="@+id/til_url_input"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -165,10 +165,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.09"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6">
+            app:layout_constraintTop_toBottomOf="@+id/tv_content_input_subtitle">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tie_url"
+                android:id="@+id/tie_url_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text" />

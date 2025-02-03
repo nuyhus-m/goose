@@ -17,7 +17,7 @@ class CheckFragment : BaseFragment<FragmentCheckBinding>(
         super.onViewCreated(view, savedInstanceState)
 
         // 드롭다운 항목을 선택할 때의 이벤트 처리
-        binding.autoCompleteTextView.setOnItemClickListener { parent, _, position, _ ->
+        binding.actCheckType.setOnItemClickListener { parent, _, position, _ ->
             val selectedItem = parent.getItemAtPosition(position) as String
 
             showBySelectedItem(selectedItem)
@@ -31,7 +31,7 @@ class CheckFragment : BaseFragment<FragmentCheckBinding>(
     override fun onResume() {
         super.onResume()
 
-        showBySelectedItem(binding.autoCompleteTextView.text.toString())
+        showBySelectedItem(binding.actCheckType.text.toString())
 
         val typeList = resources.getStringArray(R.array.check_types)
 
@@ -41,25 +41,25 @@ class CheckFragment : BaseFragment<FragmentCheckBinding>(
             typeList
         )
 
-        binding.autoCompleteTextView.setAdapter(adapter)
+        binding.actCheckType.setAdapter(adapter)
     }
 
     private fun showBySelectedItem(selectedItem: String) {
         when (selectedItem) {
             getString(R.string.type_img) -> {
-                binding.clImg.visibility = View.VISIBLE
-                binding.tilUrl.visibility = View.GONE
-                binding.tilContent.visibility = View.GONE
+                binding.clImgInput.visibility = View.VISIBLE
+                binding.tilUrlInput.visibility = View.GONE
+                binding.tilContentInput.visibility = View.GONE
             }
             getString(R.string.type_url) -> {
-                binding.clImg.visibility = View.GONE
-                binding.tilUrl.visibility = View.VISIBLE
-                binding.tilContent.visibility = View.GONE
+                binding.clImgInput.visibility = View.GONE
+                binding.tilUrlInput.visibility = View.VISIBLE
+                binding.tilContentInput.visibility = View.GONE
             }
             getString(R.string.type_content) -> {
-                binding.clImg.visibility = View.GONE
-                binding.tilUrl.visibility = View.GONE
-                binding.tilContent.visibility = View.VISIBLE
+                binding.clImgInput.visibility = View.GONE
+                binding.tilUrlInput.visibility = View.GONE
+                binding.tilContentInput.visibility = View.VISIBLE
             }
         }
     }
