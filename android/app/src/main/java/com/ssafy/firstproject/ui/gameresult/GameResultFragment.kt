@@ -3,6 +3,7 @@ package com.ssafy.firstproject.ui.gameresult
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.view.ViewGroup
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
@@ -11,6 +12,7 @@ import com.github.mikephil.charting.utils.ColorTemplate
 import com.ssafy.firstproject.R
 import com.ssafy.firstproject.base.BaseFragment
 import com.ssafy.firstproject.databinding.FragmentGameResultBinding
+import eightbitlab.com.blurview.RenderScriptBlur
 
 
 private const val TAG = "GameResultFragment"
@@ -24,6 +26,7 @@ class GameResultFragment : BaseFragment<FragmentGameResultBinding>(
         super.onViewCreated(view, savedInstanceState)
 
         setPieChart()
+        checkLogin()
     }
 
     private fun setPieChart() {
@@ -64,5 +67,26 @@ class GameResultFragment : BaseFragment<FragmentGameResultBinding>(
             animateY(1400, Easing.EaseInOutQuad)
             animate()
         }
+    }
+
+    private fun checkLogin() {
+        // 비로그인 사용자일 경우
+//        setLoginVisible()
+//        setBlurView()
+    }
+
+    private fun setLoginVisible() {
+        binding.groupLogin.visibility = View.VISIBLE
+    }
+
+    private fun setBlurView() {
+        val radius = 10f
+        val decorView = requireActivity().window.decorView
+        val rootView = decorView.findViewById<View>(android.R.id.content) as ViewGroup
+        val windowBackground = decorView.background
+
+        binding.blurView.setupWith(rootView, RenderScriptBlur(requireContext()))
+            .setFrameClearDrawable(windowBackground)
+            .setBlurRadius(radius) // 블러 강도 설정
     }
 }
