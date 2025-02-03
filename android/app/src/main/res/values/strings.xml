@@ -11,6 +11,19 @@
     <string name="type_url">URL</string>
     <string name="type_content">내용</string>
 
+    <string name="check_news_title">뉴스 판별하기</string>
+    <string name="check_news_subtitle">내가 본 기사는 어느정도 사실일까?\n뉴스를 판별해보세요</string>
+    <string name="check_title_type">판별 타입</string>
+    <string name="check_subtitle_type">어떤 타입을 판별할까요?</string>
+    <string name="content_input_title">컨텐츠 입력</string>
+    <string name="content_input_subtitle">컨텐츠를 선택해주세요.</string>
+    <string name="content_input_hint">컨텐츠 입력</string>
+    <string name="url_input_hint">URL 입력</string>
+    <string name="check">판별하기</string>
+
+    <string name="check_result_detail_title">결과 자세히보기</string>
+    <string name="check_other_news">다른 것도 판별하러 가기</string>
+
     <string-array name="check_types">
         <item>@string/type_img</item>
         <item>@string/type_url</item>
