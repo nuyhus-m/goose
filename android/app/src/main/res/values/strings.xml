@@ -7,4 +7,28 @@
     <string name="image">이미지</string>
     <string name="my">마이</string>
 
+    <string name="game_start">게임하기</string>
+    <string name="game_start_caption">당신은 얼마나 판별력이 있으신가요?\n확인하러 가볼까요?</string>
+    <string name="play">play</string>
+    <string name="answer_selection_button">정답 선택 버튼</string>
+    <string name="news_img">뉴스 이미지</string>
+    <string name="choice_dialog_header">이 기사는\n진짜? 가짜?</string>
+    <string name="result_img">결과 이미지</string>
+    <string name="answer">정답</string>
+    <string name="answer_chart">답안분포</string>
+    <string name="answer_reason">정답이유</string>
+    <string name="answer_time">체류시간</string>
+
+    <string name="choice_real">이건 진짜임ㅇㅇ</string>
+    <string name="choice_fake_news">허위 정보여서 가짜</string>
+    <string name="choice_exaggerated_news">과장 보도여서 가짜</string>
+    <string name="choice_clickbait">클릭베이트여서 가짜</string>
+
+    <string name="real">진짜</string>
+    <string name="fake_news">허위 정보</string>
+    <string name="exaggerated_news">과장 보도</string>
+    <string name="clickbait">클릭 베이트</string>
+    <string name="game_result_login">답안 분포를 확인하기 위해\n로그인이 필요합니다.</string>
+    <string name="login">로그인 하기</string>
+
 </resources>

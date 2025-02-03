@@ -2,14 +2,14 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.FirstProject" parent="Theme.Material3.DayNight.NoActionBar">
         <!--custom font-family 적용-->
-        <item name="android:textViewStyle">@style/customTextViewFontStyle</item>
-        <item name="android:buttonStyle">@style/customButtonFontStyle</item>
-        <item name="android:editTextStyle">@style/customEditTextFontStyle</item>
-        <item name="android:radioButtonStyle">@style/customRadioButtonFontStyle</item>
-        <item name="android:checkboxStyle">@style/customCheckboxFontStyle</item>
+        <item name="android:textViewStyle">@style/Widget.TextView</item>
+        <item name="android:buttonStyle">@style/Widget.Button</item>
+        <item name="android:editTextStyle">@style/Widget.EditText</item>
+        <item name="android:radioButtonStyle">@style/Widget.RadioButton</item>
+        <item name="android:checkboxStyle">@style/Widget.CheckBox</item>
 
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimary">@color/primary</item>
     </style>
 
     <style name="Theme.FirstProject" parent="Base.Theme.FirstProject" />
