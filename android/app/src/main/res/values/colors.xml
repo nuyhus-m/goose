@@ -3,8 +3,8 @@
     <color name="primary">#7189FF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="light_silver">#D9D9D9</color>
-    <color name="philippine_gray">#8E8E8E</color>
-    <color name="plump_purple">#624CAB</color>
-    <color name="lavender_blue">#CFD7FF</color>
+    <color name="lightSilver">#D9D9D9</color>
+    <color name="philippineGray">#8E8E8E</color>
+    <color name="plumpPurple">#624CAB</color>
+    <color name="lavenderBlue">#CFD7FF</color>
 </resources>
