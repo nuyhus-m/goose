@@ -28,5 +28,7 @@
     <string name="fake_news">허위 정보</string>
     <string name="exaggerated_news">과장 보도</string>
     <string name="clickbait">클릭 베이트</string>
+    <string name="game_result_login">답안 분포를 확인하기 위해\n로그인이 필요합니다.</string>
+    <string name="login">로그인 하기</string>
 
 </resources>
