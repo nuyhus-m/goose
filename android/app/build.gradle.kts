@@ -69,7 +69,7 @@ dependencies {
     implementation (libs.androidx.navigation.fragment.ktx)
     implementation (libs.androidx.navigation.ui.ktx)
 
-    //framework ktx dependency 추가
+    //framework ktx dependency
     implementation (libs.androidx.fragment.ktx)
 
     // MPAndroidChart
