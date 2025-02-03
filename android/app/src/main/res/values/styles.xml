@@ -10,6 +10,9 @@
     <style name="Widget.Button" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
         <item name="android:fontFamily">@font/spoqahansansneo_bold</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:padding">@dimen/spacing_12dp</item>
     </style>
 
     <style name="Widget.EditText" parent="@android:style/Widget.DeviceDefault.EditText">
@@ -64,14 +67,10 @@
     <!-- Button Style -->
     <style name="Widget.Button.Primary">
         <item name="android:textSize">18sp</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:background">@drawable/bg_btn</item>
     </style>
 
     <style name="Widget.Button.Secondary">
         <item name="android:textSize">16sp</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:background">@drawable/bg_btn_small</item>
         <item name="android:fontFamily">@font/spoqahansansneo_medium</item>
     </style>
 

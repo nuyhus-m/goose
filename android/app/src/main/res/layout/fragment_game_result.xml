@@ -201,7 +201,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_24dp"
-                android:background="@drawable/bg_btn_small"
                 android:text="@string/login"
                 app:layout_constraintBottom_toBottomOf="@id/cl_chart"
                 app:layout_constraintEnd_toEndOf="@id/cl_chart"
