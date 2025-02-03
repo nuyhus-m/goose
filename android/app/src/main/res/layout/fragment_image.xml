@@ -10,7 +10,7 @@
         android:id="@+id/arrow_left"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="49dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:src="@drawable/ic_arrow_left"
@@ -47,7 +47,7 @@
         style="@style/Widget.TextView.Subheader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="56dp"
         android:text="@string/image_add"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
         style="@style/Widget.TextView.Subcaption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="1dp"
         android:text="@string/image_add_caption"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +69,7 @@
         android:id="@+id/iv_add_image_area"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="24dp"
         android:layout_marginTop="16dp"
         android:scaleType="fitXY"
         android:src="@drawable/bg_add_img"
@@ -88,6 +88,7 @@
         app:layout_constraintStart_toStartOf="@id/iv_add_image_area"
         app:layout_constraintTop_toTopOf="@id/iv_add_image_area" />
 
+
     <Button
         android:id="@+id/btn_ai_check"
         style="@style/Widget.Button.Primary"
@@ -104,10 +105,10 @@
     <Button
         android:id="@+id/btn_composite_check"
         style="@style/Widget.Button.Primary"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="@dimen/spacing_16dp"
-        android:layout_marginBottom="62dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/composite_check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

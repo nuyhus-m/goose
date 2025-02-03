@@ -33,7 +33,6 @@
 
     <style name="Widget.TextView.Caption">
         <item name="android:textSize">14sp</item>
-        <item name="android:letterSpacing">-0.05</item>
         <item name="android:textColor">@color/sonicSilver</item>
     </style>
 
@@ -45,7 +44,6 @@
 
     <style name="Widget.TextView.Subcaption">
         <item name="android:textSize">13sp</item>
-        <item name="android:letterSpacing">-0.025</item>
         <item name="android:fontFamily">@font/spoqahansansneo_regular</item>
         <item name="android:textColor">@color/sonicSilver</item>
     </style>
