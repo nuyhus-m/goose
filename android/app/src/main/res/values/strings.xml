@@ -22,5 +22,8 @@
 
     <string name="ai_result_description">어쩌구 저쩌구 고양이 이미지네요.\n
 AI 판별 결과 AI 확률 95%입니다.</string>
+    <string name="composite_result_description">어쩌구 저쩌구 고양이 이미지네요.\n
+합성 판별 결과 합성 확률 95%입니다.</string>
+
     <string name="other_img_check">다른 사진 판별하기</string>
 </resources>
