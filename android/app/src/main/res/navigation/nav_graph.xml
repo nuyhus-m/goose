@@ -27,12 +27,17 @@
         android:id="@+id/dest_image"
         android:name="com.ssafy.firstproject.ui.image.ImageFragment"
         android:label="fragment_image"
-        tools:layout="@layout/fragment_check" />
+        tools:layout="@layout/fragment_check"/>
 
     <fragment
         android:id="@+id/dest_my_page"
         android:name="com.ssafy.firstproject.ui.mypage.MyPageFragment"
         android:label="fragment_my_page"
         tools:layout="@layout/fragment_my_page" />
+
+    <fragment
+        android:id="@+id/dest_check_detail"
+        android:name="com.ssafy.firstproject.ui.checkresultdetail.CheckResultDetailFragment"
+        android:label="CheckResultDetailFragment" />
 
 </navigation>

@@ -3,6 +3,7 @@ package com.ssafy.firstproject.ui.check
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
+import androidx.navigation.fragment.findNavController
 import com.ssafy.firstproject.R
 import com.ssafy.firstproject.base.BaseFragment
 import com.ssafy.firstproject.databinding.FragmentCheckBinding
@@ -20,6 +21,10 @@ class CheckFragment : BaseFragment<FragmentCheckBinding>(
             val selectedItem = parent.getItemAtPosition(position) as String
 
             showBySelectedItem(selectedItem)
+        }
+
+        binding.btnCheck.setOnClickListener {
+            findNavController().navigate(R.id.dest_check_detail)
         }
     }
 
