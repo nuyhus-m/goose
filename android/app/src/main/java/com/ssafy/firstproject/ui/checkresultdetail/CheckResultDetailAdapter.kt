@@ -5,10 +5,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.ssafy.firstproject.data.model.NewsContent
-import com.ssafy.firstproject.databinding.ItemNewsContentBinding
+import com.ssafy.firstproject.databinding.ItemCheckResultDetailBinding
 
 class CheckResultDetailAdapter : ListAdapter<NewsContent, CheckResultDetailAdapter.CheckResultDetailViewHolder>(CheckNewsDiffCallback()) {
-    inner class CheckResultDetailViewHolder(private val binding: ItemNewsContentBinding) :
+    inner class CheckResultDetailViewHolder(private val binding: ItemCheckResultDetailBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(newsContent: NewsContent) {
@@ -18,7 +18,7 @@ class CheckResultDetailAdapter : ListAdapter<NewsContent, CheckResultDetailAdapt
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CheckResultDetailViewHolder {
-        val binding = ItemNewsContentBinding.inflate(
+        val binding = ItemCheckResultDetailBinding.inflate(
             LayoutInflater.from(parent.context),
             parent,
             false
