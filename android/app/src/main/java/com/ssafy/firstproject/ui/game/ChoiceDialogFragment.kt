@@ -27,7 +27,7 @@ class ChoiceDialogFragment : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnReal.setOnClickListener {
-            findNavController().navigate(R.id.dest_game_result)
+            findNavController().navigate(R.id.action_dest_choice_dialog_to_dest_game_result)
         }
     }
 

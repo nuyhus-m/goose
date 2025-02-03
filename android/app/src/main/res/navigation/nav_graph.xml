@@ -51,6 +51,11 @@
         android:id="@+id/dest_choice_dialog"
         android:name="com.ssafy.firstproject.ui.game.ChoiceDialogFragment"
         android:label="ChoiceDialogFragment"
-        tools:layout="@layout/dialog_choice" />
+        tools:layout="@layout/dialog_choice">
+        <action
+            android:id="@+id/action_dest_choice_dialog_to_dest_game_result"
+            app:destination="@id/dest_game_result"
+            app:popUpTo="@id/dest_game_start" />
+    </dialog>
 
 </navigation>
