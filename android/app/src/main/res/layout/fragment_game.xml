@@ -45,7 +45,6 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="43dp"
                 android:contentDescription="@string/news_img"
-                android:src="@color/black"
                 app:layout_constraintDimensionRatio="1:0.6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
