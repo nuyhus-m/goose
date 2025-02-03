@@ -15,4 +15,12 @@
 
     <string name="image_add">사진 넣기</string>
     <string name="image_add_caption">판별할 사진을 선택해주세요.</string>
+
+    <string name="ai_check_result">AI 사진 판별 결과</string>
+    <string name="composite_check_result">합성 사진 판별 결과</string>
+    <string name="img_check_result_caption">사진 판별 결과를 알려드릴게요.</string>
+
+    <string name="ai_result_description">어쩌구 저쩌구 고양이 이미지네요.\n
+AI 판별 결과 AI 확률 95%입니다.</string>
+    <string name="other_img_check">다른 사진 판별하기</string>
 </resources>
