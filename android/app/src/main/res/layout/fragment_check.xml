@@ -72,7 +72,7 @@
             app:boxStrokeWidth="2dp">
 
             <AutoCompleteTextView
-                android:id="@+id/act_check_type"
+                android:id="@+id/actv_check_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/image"
