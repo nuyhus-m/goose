@@ -7,7 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ssafy.firstproject.data.model.NewsContent
 import com.ssafy.firstproject.databinding.ItemCheckResultDetailBinding
 
-class CheckResultDetailAdapter : ListAdapter<NewsContent, CheckResultDetailAdapter.CheckResultDetailViewHolder>(CheckNewsDiffCallback()) {
+class CheckResultDetailAdapter :
+    ListAdapter<NewsContent, CheckResultDetailAdapter.CheckResultDetailViewHolder>(
+        CheckNewsDiffCallback()
+    ) {
     inner class CheckResultDetailViewHolder(private val binding: ItemCheckResultDetailBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
@@ -27,7 +30,10 @@ class CheckResultDetailAdapter : ListAdapter<NewsContent, CheckResultDetailAdapt
         return CheckResultDetailViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: CheckResultDetailAdapter.CheckResultDetailViewHolder, position: Int) {
+    override fun onBindViewHolder(
+        holder: CheckResultDetailAdapter.CheckResultDetailViewHolder,
+        position: Int
+    ) {
         holder.bind(getItem(position))
     }
 }

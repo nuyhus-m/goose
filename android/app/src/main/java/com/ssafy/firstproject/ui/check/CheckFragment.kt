@@ -17,7 +17,7 @@ class CheckFragment : BaseFragment<FragmentCheckBinding>(
         super.onViewCreated(view, savedInstanceState)
 
         // 드롭다운 항목을 선택할 때의 이벤트 처리
-        binding.actCheckType.setOnItemClickListener { parent, _, position, _ ->
+        binding.actvCheckType.setOnItemClickListener { parent, _, position, _ ->
             val selectedItem = parent.getItemAtPosition(position) as String
 
             showBySelectedItem(selectedItem)
@@ -31,7 +31,7 @@ class CheckFragment : BaseFragment<FragmentCheckBinding>(
     override fun onResume() {
         super.onResume()
 
-        showBySelectedItem(binding.actCheckType.text.toString())
+        showBySelectedItem(binding.actvCheckType.text.toString())
 
         val typeList = resources.getStringArray(R.array.check_types)
 
@@ -41,7 +41,7 @@ class CheckFragment : BaseFragment<FragmentCheckBinding>(
             typeList
         )
 
-        binding.actCheckType.setAdapter(adapter)
+        binding.actvCheckType.setAdapter(adapter)
     }
 
     private fun showBySelectedItem(selectedItem: String) {

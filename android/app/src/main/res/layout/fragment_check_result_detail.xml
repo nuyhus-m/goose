@@ -44,101 +44,81 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_check_result_detail_title" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/spacing_24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_result_image">
-
         <TextView
             android:id="@+id/tv_news_title"
             style="@style/checkNewsTitleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="산타클로스 염색 소식을 여러분을 알고 계신가요?"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_result_image"
+            tools:text="산타클로스 염색 소식을 여러분을 알고 계신가요?" />
 
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/cl_news_meta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_news_title"> <!-- 수직 중앙 정렬 -->
+        <TextView
+            android:id="@+id/tv_news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/philippineGray"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_news_title"
+            tools:text="2025.01.27" />
 
-                <TextView
-                    android:id="@+id/tv_news_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="2025.01.27"
-                    android:textColor="@color/philippineGray"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_news_reporter1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/philippineGray"
+            android:layout_marginStart="@dimen/spacing_8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_news_date"
+            app:layout_constraintStart_toEndOf="@+id/tv_news_media"
+            app:layout_constraintTop_toTopOf="@+id/tv_news_date"
+            tools:text="강인혁 기자" />
 
-                <TextView
-                    android:id="@+id/tv_news_media"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="SSAFY"
-                    android:textColor="@color/philippineGray"
-                    android:layout_marginStart="@dimen/spacing_12dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_news_date"
-                    app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_news_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/philippineGray"
+            android:layout_marginStart="@dimen/spacing_8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_news_date"
+            app:layout_constraintStart_toEndOf="@+id/tv_news_date"
+            app:layout_constraintTop_toTopOf="@+id/tv_news_date"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="SSAFY" />
 
-                <TextView
-                    android:id="@+id/tv_news_reporter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="강인혁 기자"
-                    android:textColor="@color/philippineGray"
-                    android:layout_marginStart="@dimen/spacing_12dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_news_media"
-                    app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_truth_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_lavender_blue_radius_8dp"
+            android:padding="@dimen/spacing_8dp"
+            android:textColor="@color/plumpPurple"
+            android:textSize="12sp"
+            android:layout_marginStart="@dimen/spacing_8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_news_date"
+            app:layout_constraintStart_toEndOf="@+id/tv_news_reporter1"
+            app:layout_constraintTop_toTopOf="@+id/tv_news_date"
+            tools:text="진실 80%" />
 
-                <TextView
-                    android:id="@+id/tv_truth_percent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="진실 80%"
-                    android:textSize="12sp"
-                    android:textColor="@color/plumpPurple"
-                    android:background="@drawable/bg_lavender_blue_radius_8dp"
-                    android:padding="@dimen/spacing_8dp"
-                    android:layout_marginStart="@dimen/spacing_12dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_news_reporter"
-                    app:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_news_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_news_date" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_check_other_news"
+            style="@style/checkCommonButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_other_news"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_news_content" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_news_content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cl_news_meta" />
-
-            <Button
-                android:id="@+id/btn_check_other_news"
-                style="@style/checkCommonButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/check_other_news"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rv_news_content" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
