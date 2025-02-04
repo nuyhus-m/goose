@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:layout_scrollFlags="scroll|enterAlways"
-            app:navigationIcon="@drawable/ic_back" />
+            app:navigationIcon="@drawable/btn_left_arrow" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -79,7 +79,7 @@
                 android:layout_width="0dp"
                 android:layout_height="1dp"
                 android:layout_marginTop="@dimen/spacing_24dp"
-                android:background="@drawable/bg_line"
+                android:background="#E5E5E5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_date" />

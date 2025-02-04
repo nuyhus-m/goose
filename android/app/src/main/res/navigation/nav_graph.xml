@@ -58,4 +58,10 @@
             app:popUpTo="@id/dest_game_start" />
     </dialog>
 
+    <fragment
+        android:id="@+id/dest_check_detail"
+        android:name="com.ssafy.firstproject.ui.checkresultdetail.CheckResultDetailFragment"
+        android:label="CheckResultDetailFragment"
+        tools:layout="@layout/fragment_check_result_detail" />
+
 </navigation>
