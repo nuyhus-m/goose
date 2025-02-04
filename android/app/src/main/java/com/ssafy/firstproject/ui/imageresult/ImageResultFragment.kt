@@ -20,7 +20,7 @@ class ImageResultFragment : BaseFragment<FragmentImageResultBinding>(
             findNavController().popBackStack() // 이전 화면으로 이동
         }
         binding.btnOtherImgCheck.setOnClickListener {
-            findNavController().navigate(R.id.dest_image)
+            findNavController().popBackStack()
 
         }
     }
