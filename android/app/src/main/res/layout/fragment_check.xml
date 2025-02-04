@@ -75,6 +75,7 @@
                 android:id="@+id/act_check_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/image"
                 android:dropDownHeight="150dp"
                 android:inputType="none"
                 android:background="@drawable/bg_white_radius_1dp" />
