@@ -102,7 +102,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_img_input"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/spacing_8dp"
             android:background="@drawable/bg_white_radius_1dp"
@@ -127,7 +127,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_content_input"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:hint="@string/content_input_hint"
             android:visibility="gone"
@@ -149,7 +149,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_url_input"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:visibility="gone"
             android:hint="@string/url_input_hint"
@@ -171,7 +171,7 @@
         <Button
             android:id="@+id/btn_check"
             style="@style/checkCommonButtonStyle"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:text="@string/check"
             app:layout_constraintBottom_toBottomOf="parent"
