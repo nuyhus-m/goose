@@ -52,7 +52,6 @@
         android:scaleType="fitXY"
         android:src="@drawable/bg_add_img"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_caption" />
 
