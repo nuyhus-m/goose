@@ -5,4 +5,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="sonicSilver">#7A7A7A</color>
     <color name="lavender">#E0EEFC</color>
+    <color name="lightSilver">#D9D9D9</color>
+    <color name="philippineGray">#8E8E8E</color>
+    <color name="plumpPurple">#624CAB</color>
+    <color name="lavenderBlue">#CFD7FF</color>
 </resources>
