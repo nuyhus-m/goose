@@ -64,7 +64,7 @@
         android:layout_marginTop="64dp"
         android:background="@drawable/bg_all"
         android:padding="39dp"
-        android:text="@string/ai_result_description"
+        tools:text="@string/ai_result_description"
         android:textAlignment="center"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
