@@ -107,7 +107,7 @@
     <Button
         android:id="@+id/btn_composite_check"
         style="@style/Widget.Button.Primary"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="@dimen/spacing_16dp"
         android:layout_marginBottom="16dp"
