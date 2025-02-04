@@ -35,4 +35,10 @@
         android:label="fragment_my_page"
         tools:layout="@layout/fragment_my_page" />
 
+    <fragment
+        android:id="@+id/dest_image_ai_result"
+        android:name="com.ssafy.firstproject.ui.imageresult.ImageResultFragment"
+        android:label="fragment_image_ai_result"
+        tools:layout="ImageAiResultFragment"/>
+
 </navigation>

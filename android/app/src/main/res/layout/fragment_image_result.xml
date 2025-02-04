@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.imageresult.ImageResultFragment">
 
-
-    <ImageButton
+    <ImageView
         android:id="@+id/arrow_left"
         android:layout_width="24dp"
         android:layout_height="24dp"
@@ -19,7 +20,7 @@
 
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tv_ai_result_title"
         style="@style/Widget.TextView.Header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +40,7 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+        app:layout_constraintTop_toBottomOf="@id/tv_ai_result_title" />
 
 
     <ImageView
@@ -57,7 +58,7 @@
 
     <TextView
         android:id="@+id/tv_ai_result_description"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/spacing_16dp"
         android:layout_marginTop="64dp"
@@ -66,18 +67,22 @@
         android:text="@string/ai_result_description"
         android:textAlignment="center"
         android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_ai_result"
-        tools:layout_editor_absoluteX="24dp" />
+         />
 
     <Button
-        android:id="@+id/btn_composite_check"
+        android:id="@+id/btn_other_img_check"
         style="@style/Widget.Button.Primary"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/spacing_16dp"
-        android:layout_marginBottom="184dp"
+
         android:text="@string/other_img_check"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="34dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_ai_result_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
