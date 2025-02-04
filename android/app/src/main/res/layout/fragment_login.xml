@@ -5,18 +5,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.user.LoginFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_margin="@dimen/spacing_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
+            android:id="@+id/tv_login_fragment_title"
+            style="@style/Widget.TextView.Header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -29,7 +33,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
             android:src="@drawable/img_test_goose" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -37,13 +41,14 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/spacing_16dp"
             android:hint="아이디">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tie_id_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/spoqahansansneo_medium"
                 android:inputType="text" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -61,9 +66,61 @@
                 android:id="@+id/tie_pw_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/spoqahansansneo_medium"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_auto_login"
+                style="@style/Widget.TextView.Caption.Silver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동 로그인하기" />
+
+            <TextView
+                android:id="@+id/tv_sign_up"
+                style="@style/Widget.TextView.Caption.Silver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_16dp"
+                android:text="회원가입" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Widget.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_16dp"
+            android:text="로그인하기" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_24dp">
+
+            <ImageView
+                android:id="@+id/iv_kakao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_kakao" />
+
+            <ImageView
+                android:id="@+id/iv_naver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_naver"
+                android:layout_marginStart="@dimen/spacing_8dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
