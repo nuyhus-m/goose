@@ -42,7 +42,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="@dimen/spacing_16dp"
-            android:hint="아이디">
+            android:hint="아이디"
+            app:boxStrokeWidth="0dp"
+            app:boxBackgroundColor="@color/lightSilver">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tie_id_input"
@@ -60,7 +62,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="8dp"
-            android:hint="비밀번호">
+            android:hint="비밀번호"
+            app:boxStrokeWidth="0dp"
+            app:boxBackgroundColor="@color/lightSilver">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tie_pw_input"
