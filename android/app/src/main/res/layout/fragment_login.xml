@@ -50,6 +50,7 @@
                 android:id="@+id/tie_login_id_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/bg_light_silver_10dp"
                 android:fontFamily="@font/spoqahansansneo_medium"
                 android:inputType="text" />
 
@@ -70,6 +71,7 @@
                 android:id="@+id/tie_login_pw_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/bg_light_silver_10dp"
                 android:fontFamily="@font/spoqahansansneo_medium"
                 android:inputType="textPassword" />
 
