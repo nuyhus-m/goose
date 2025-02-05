@@ -64,4 +64,10 @@
         android:label="CheckResultDetailFragment"
         tools:layout="@layout/fragment_check_result_detail" />
 
+    <fragment
+        android:id="@+id/dest_login"
+        android:name="com.ssafy.firstproject.ui.user.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
 </navigation>
