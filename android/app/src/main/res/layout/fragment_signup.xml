@@ -84,7 +84,7 @@
 
     <TextView
         android:id="@+id/tv_id_input_meta_info"
-        style="@style/Widget.TextView.Caption.Silver"
+        style="@style/Widget.TextView.Meta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4~12자 영문 소문자와 숫자 조합으로 입력해주세요."
@@ -161,7 +161,7 @@
 
     <TextView
         android:id="@+id/tv_pw_meta_info"
-        style="@style/Widget.TextView.Caption.Silver"
+        style="@style/Widget.TextView.Meta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_8dp"
@@ -222,7 +222,7 @@
 
     <TextView
         android:id="@+id/tv_nickname_meta_info"
-        style="@style/Widget.TextView.Caption.Silver"
+        style="@style/Widget.TextView.Meta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_8dp"

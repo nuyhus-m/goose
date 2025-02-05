@@ -52,6 +52,13 @@
         <item name="android:textColor">@color/sonicSilver</item>
     </style>
 
+    <style name="Widget.TextView.Meta">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sonicSilver</item>
+        <item name="android:letterSpacing">-0.06</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+    </style>
+
     <style name="Widget.TextView.Date">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/sonicSilver</item>
