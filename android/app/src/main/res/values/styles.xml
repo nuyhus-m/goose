@@ -52,6 +52,13 @@
         <item name="android:textColor">@color/sonicSilver</item>
     </style>
 
+    <style name="Widget.TextView.Caption.GraniteGray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/graniteGray</item>
+        <item name="android:fontFamily">@font/spoqahansansneo_bold</item>
+    </style>
+
+
     <style name="Widget.TextView.Meta">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/sonicSilver</item>
