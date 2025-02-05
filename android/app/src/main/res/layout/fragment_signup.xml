@@ -109,7 +109,6 @@
         android:layout_marginTop="@dimen/spacing_8dp"
         app:boxBackgroundColor="@color/lightSilver"
         app:boxStrokeWidth="0dp"
-        app:endIconDrawable="@drawable/ic_round_cancel"
         app:endIconMode="custom"
         app:endIconTint="@color/philippineGray"
         app:hintEnabled="false"
@@ -155,7 +154,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/bg_light_silver_10dp"
             android:fontFamily="@font/spoqahansansneo_medium"
-            android:hint="비밀번호"
+            android:hint="비밀번호 확인"
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -237,7 +236,7 @@
         style="@style/Widget.Button.Primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_16dp"
+        android:layout_marginTop="@dimen/spacing_24dp"
         android:text="가입하기"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
