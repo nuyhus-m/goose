@@ -69,5 +69,10 @@
         android:name="com.ssafy.firstproject.ui.user.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/dest_signup"
+        android:name="com.ssafy.firstproject.ui.user.SignupFragment"
+        android:label="SignupFragment"
+        tools:layout="@layout/fragment_signup" />
 
 </navigation>
