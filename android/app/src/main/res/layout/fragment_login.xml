@@ -34,7 +34,7 @@
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/spacing_16dp"
-            android:src="@drawable/img_test_goose" />
+            android:src="@drawable/ic_goose" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_id_input"
