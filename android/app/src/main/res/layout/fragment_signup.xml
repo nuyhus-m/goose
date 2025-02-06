@@ -55,8 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_id_title"
         app:layout_constraintWidth_percent="0.65"
         app:layout_constraintHeight_percent="0.08"
-        app:endIconMode="custom"
-        app:endIconDrawable="@drawable/ic_round_cancel"
+        app:endIconMode="clear_text"
         app:endIconTint="@color/philippineGray">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -189,8 +188,7 @@
         android:layout_marginTop="@dimen/spacing_8dp"
         app:boxBackgroundColor="@color/lightSilver"
         app:boxStrokeWidth="0dp"
-        app:endIconDrawable="@drawable/ic_round_cancel"
-        app:endIconMode="custom"
+        app:endIconMode="clear_text"
         app:endIconTint="@color/philippineGray"
         app:hintEnabled="false"
         app:layout_constraintHeight_percent="0.08"
