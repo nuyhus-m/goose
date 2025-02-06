@@ -48,7 +48,6 @@
     </style>
 
     <style name="Widget.TextView.Caption.Silver">
-        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/sonicSilver</item>
     </style>
 
