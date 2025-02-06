@@ -1,4 +1,4 @@
-package com.ssafy.firstproject.ui.user
+package com.ssafy.firstproject.ui.signup
 
 import android.os.Bundle
 import android.view.View

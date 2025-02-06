@@ -8,7 +8,7 @@
     android:paddingHorizontal="@dimen/spacing_24dp"
     android:paddingBottom="@dimen/spacing_24dp"
     android:background="@color/white"
-    tools:context=".ui.user.SignupFragment">
+    tools:context=".ui.signup.SignupFragment">
 
     <ImageView
         android:id="@+id/iv_signup_close"
